@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -8,13 +9,19 @@ namespace Base
     public class VerticalSnapScroll : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     {
         [Header("ScrollRect")]
-        public ScrollRect scrollRect;
+        [SerializeField] private ScrollRect scrollRect;
 
         [Header("Snap")]
-        public float snapSpeed = 10f;
+        [SerializeField] private float snapSpeed = 10f;
 
         [Header("Drag")]
-        public float dragThreshold = 50f;
+        [SerializeField] private float dragThreshold = 50f;
+        
+        [Header("Components")]
+        [SerializeField] private DragCounter dragCounter;
+
+        [Header("Events")] 
+        [SerializeField] private UnityEvent events;
         
         private RectTransform content;
         private float itemHeight;
@@ -84,10 +91,9 @@ namespace Base
             targetIndex = CalculateTargetIndex(dragDelta, currentIndex);
             targetIndex = Mathf.Clamp(targetIndex, 0, content.childCount - 1);
             
-            snapCoroutine = StartCoroutine(SnapToIndex());
             
-            Debug.Log(content.childCount);
-            Debug.Log("Evento!");
+            dragCounter.AddCounter();
+            snapCoroutine = StartCoroutine(SnapToIndex());
         }
         
         private float CalculateDragDelta()

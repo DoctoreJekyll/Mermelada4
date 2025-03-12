@@ -50,7 +50,7 @@ namespace Images
         }
 
 
-        private void InstantiateMorningOutImages(int maxElements)
+        public void InstantiateMorningOutImages(int maxElements)
         {
             List<GameObject> shuffled = Shuffle(morningImagesOutPrefabs);
 

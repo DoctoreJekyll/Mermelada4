@@ -1,3 +1,5 @@
+using System;
+using TMPro;
 using UnityEngine;
 
 namespace Base
@@ -7,8 +9,21 @@ namespace Base
 
 
         [SerializeField] private int counter;
+        [SerializeField] private int clockValue;
+        
+        [SerializeField] private TMP_Text countText;
 
-        public int getCounterValue()
+        private string clockFormat;
+
+        private void Start()
+        {
+            clockValue = 8;
+            clockFormat = clockValue.ToString("D2");
+
+            countText.text = clockFormat + ":00";
+        }
+
+        public int GetCounterValue()
         {
             return counter;
         }
@@ -16,6 +31,9 @@ namespace Base
         public void AddCounter()
         {
             counter++;
+            clockValue++;
+            clockFormat = clockValue.ToString("D2");
+            countText.text = clockFormat + ":00";
         }
 
 

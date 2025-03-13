@@ -60,10 +60,10 @@ namespace Base
                     activeButtonsOptions.ButtonMorning();
                     break;
                 case 15:
-                    activeButtonsOptions.ButtonEvening();
+                    activeButtonsOptions.ButtonAfternoon();
                     break;
                 case 22:
-                    activeButtonsOptions.ButtonAfternoon();
+                    activeButtonsOptions.ButtonEvening();
                     break;
                 default:
                     break;

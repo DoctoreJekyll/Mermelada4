@@ -9,13 +9,17 @@ namespace Dialogue
     {
 
         [SerializeField] private string[] mLines;
+        [SerializeField] private string[] endLines;
         [SerializeField] private float timeBetweenLines;
 
 
         [SerializeField] private TMP_Text boxTxt;
         private int currentLine;
 
-        private void Start()
+
+        private bool initDay = true;
+
+        private void OnEnable()
         {
             boxTxt.text = "";
             StartCoroutine(Typing());
@@ -24,6 +28,7 @@ namespace Dialogue
         public void ContinueButton()
         {
             StopAllCoroutines();
+            currentLine++;
             
             if (currentLine < mLines.Length)
             {
@@ -32,21 +37,32 @@ namespace Dialogue
             else
             {
                 this.gameObject.SetActive(false);
+                initDay = false;
+                currentLine = 0;
             }
         }
-
-
+        
         private IEnumerator Typing()
         {
             boxTxt.text = "";
-            
-            foreach (char c in mLines[currentLine])
+
+            if (initDay)
             {
-                boxTxt.text += c;
-                yield return new WaitForSeconds(timeBetweenLines);
+                foreach (char c in mLines[currentLine])
+                {
+                    boxTxt.text += c;
+                    yield return new WaitForSeconds(timeBetweenLines);
+                }
             }
-            
-            currentLine++;
+            else
+            {
+                foreach (char c in endLines[currentLine])
+                {
+                    boxTxt.text += c;
+                    yield return new WaitForSeconds(timeBetweenLines);
+                }
+            }
+
         }
         
     }

@@ -18,12 +18,13 @@ namespace Dialogue
         private void Start()
         {
             boxTxt.text = "";
-
             StartCoroutine(Typing());
         }
 
         public void ContinueButton()
         {
+            StopAllCoroutines();
+            
             if (currentLine < mLines.Length)
             {
                 StartCoroutine(Typing());

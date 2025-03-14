@@ -538,12 +538,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Lunes...?
-  - "Pues no he hecho nada hoy, todo el d\xEDa con el m\xF3vil "
-  - "Bueno es lunes, tengo toda la semana, ma\xF1ana me lo tomo tranquilo y el mi\xE9rcoles
-    le damos ca\xF1a"
-  - Ahora intenta dormir tu con esta ansiedad
-  - "Bueno, ma\xF1ana mejor"
+  - Que cojones pasa en mi cabeza
+  - Literalmente acabo de pasar un sabado en la cama
+  - No he salido, no he hecho al final nada
+  - "Esto no puede seguir as\xED"
+  - Tengo que pedir ayuda, tengo que borrar esta movida.
+  - Voy a intentar dormir, necesito descansar algo
   timeBetweenLines: 0.05
   boxTxt: {fileID: 1448983607}
 --- !u!114 &219700533
@@ -2670,7 +2670,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899096143}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -5483,13 +5483,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - LUNES
-  - Lunes...?
-  - Joder que pronto
-  - Hoy me dije que iba a hacer cosas, es lunes, nueva semana, otro intento
-  - "Pero dios que pereza de d\xEDa, es lunes"
-  - "Voy a abrir el sobrecito del d\xEDa del pokemon"
-  - Y bue, un ratito en toktok, luego me pongo a hacer cosas
+  - SABADO
+  - Bueno, hoy es sabado, me levanto pronto
+  - Puedo intentar hacer algo hoy
+  - La jam termina en breves
+  - "Tienes tiempo de hacer algo peque\xF1o"
+  - Lo ideal seria coger el movil lo menos posible
+  - "Co\xF1o un mensaje, quien es a estas horas"
   timeBetweenLines: 0.05
   boxTxt: {fileID: 1037566637}
 --- !u!1 &2081078290

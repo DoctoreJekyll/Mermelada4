@@ -15,7 +15,6 @@ namespace Dialogue
         [SerializeField] private TMP_Text boxTxt;
         private int currentLine;
         
-        
 
         private void OnEnable()
         {
@@ -50,6 +49,11 @@ namespace Dialogue
             }
             else
             {
+                if (SceneManager.GetActiveScene().buildIndex == 6)
+                {
+                    //Quizas activar un boton que sirva para cerrar el juego o alguna movida narrativa
+                    Application.Quit();
+                }
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }

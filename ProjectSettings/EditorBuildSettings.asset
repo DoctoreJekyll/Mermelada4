@@ -11,6 +11,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1Martes.unity
     guid: 69b8288dc6a579f4292fda28c98863c0
+  - enabled: 1
+    path: Assets/Scenes/2Miercoles.unity
+    guid: 33ab3f727de053e4894f58a004e22e16
+  - enabled: 1
+    path: Assets/Scenes/3Jueves.unity
+    guid: 435c3aa27ee694643be6f8ab6e2e8ead
+  - enabled: 1
+    path: Assets/Scenes/4Viernes.unity
+    guid: 90bf0b3d026d81243b3adc0bdc9aed3a
+  - enabled: 1
+    path: Assets/Scenes/5Sabado.unity
+    guid: 40bc58e67ee6c8f479fe1718b732d7a8
+  - enabled: 1
+    path: Assets/Scenes/6Domingo.unity
+    guid: f83c0ffcb898cd441ae75f1f0278926e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

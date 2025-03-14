@@ -13,6 +13,9 @@ namespace Base
 
         private string clockFormat;
         private ActiveButtonsOptions activeButtonsOptions;
+        
+        [Header("End day obj")]
+        [SerializeField] private GameObject endObj;
 
         private void Start()
         {
@@ -42,6 +45,8 @@ namespace Base
             
             SetClockValue();
             SetActiveButtonsOptions();
+            
+            ActiveEndDayTxt();
         }
 
         private void SetClockValue()
@@ -67,6 +72,14 @@ namespace Base
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void ActiveEndDayTxt()
+        {
+            if (clockValue == 4)
+            {
+                endObj.SetActive(true);
             }
         }
         

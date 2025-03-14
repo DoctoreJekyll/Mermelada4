@@ -1,23 +1,21 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Dialogue
 {
     public class DialogueController : MonoBehaviour
     {
 
-        [SerializeField] private string[] mLines;
-        [SerializeField] private string[] endLines;
+        [SerializeField] private string[] lines;
         [SerializeField] private float timeBetweenLines;
 
 
         [SerializeField] private TMP_Text boxTxt;
         private int currentLine;
-
-
-        private bool initDay = true;
+        
+        
 
         private void OnEnable()
         {
@@ -30,15 +28,29 @@ namespace Dialogue
             StopAllCoroutines();
             currentLine++;
             
-            if (currentLine < mLines.Length)
+            if (currentLine < lines.Length)
             {
                 StartCoroutine(Typing());
             }
             else
             {
                 this.gameObject.SetActive(false);
-                initDay = false;
                 currentLine = 0;
+            }
+        }
+
+        public void ContinueButton2()
+        {
+            StopAllCoroutines();
+            currentLine++;
+            
+            if (currentLine < lines.Length)
+            {
+                StartCoroutine(Typing());
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
         
@@ -46,23 +58,11 @@ namespace Dialogue
         {
             boxTxt.text = "";
 
-            if (initDay)
+            foreach (char c in lines[currentLine])
             {
-                foreach (char c in mLines[currentLine])
-                {
-                    boxTxt.text += c;
-                    yield return new WaitForSeconds(timeBetweenLines);
-                }
+                boxTxt.text += c;
+                yield return new WaitForSeconds(timeBetweenLines);
             }
-            else
-            {
-                foreach (char c in endLines[currentLine])
-                {
-                    boxTxt.text += c;
-                    yield return new WaitForSeconds(timeBetweenLines);
-                }
-            }
-
         }
         
     }

@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Base;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -42,8 +44,16 @@ namespace Images
         }
 
 
-        private void InstantiateMorningOutImages(int maxElements, List<GameObject> list)
+        private IEnumerator InstantiateMorningOutImages(int maxElements, List<GameObject> list)
         {
+            Fade.Instance.PlayFadeIn();
+            yield return new WaitForSeconds(0.25f);
+            CenterImageDetection centerImageDetection = FindFirstObjectByType<CenterImageDetection>();
+            centerImageDetection.DestroyOutOffScreenImages();
+            
+            yield return new WaitForSeconds(0.5f);
+            Fade.Instance.PlayFadeOut();
+            
             List<GameObject> shuffled = Shuffle(list);
 
             if (maxElements <= shuffled.Count())
@@ -59,50 +69,50 @@ namespace Images
         //MORNING
         public void MorningOutButton(int elements)
         {
-            InstantiateMorningOutImages(elements, morningImagesOutPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, morningImagesOutPrefabs));
         }
         
         public void MorningInButton(int elements)
         {
-            InstantiateMorningOutImages(elements, morningImagesInPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, morningImagesInPrefabs));
         }
         
         public void MorningNothingToDoButton(int elements)
         {
-            InstantiateMorningOutImages(elements, nothingToDoMorningPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, nothingToDoMorningPrefabs));
         }
         
         //AFTERNOON
         public void AfternoonOutButton(int elements)
         {
-            InstantiateMorningOutImages(elements, afternoonImagesOutPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, afternoonImagesOutPrefabs));
         }
         
         public void AfternoonInButton(int elements)
         {
-            InstantiateMorningOutImages(elements, afternoonInImagesOutPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, afternoonInImagesOutPrefabs));
         }
         
         public void AfternoonNothingToDoButton(int elements)
         {
-            InstantiateMorningOutImages(elements, nothingToDoAfternoonPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, nothingToDoAfternoonPrefabs));
         }
         
         
         //EVENING
         public void EveningOutButton(int elements)
         {
-            InstantiateMorningOutImages(elements, eveningImagesOutPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, eveningImagesOutPrefabs));
         }
         
         public void EveningInButton(int elements)
         {
-            InstantiateMorningOutImages(elements, eveningInImagesOutPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, eveningInImagesOutPrefabs));
         }
         
         public void EveningNothingToDoButton(int elements)
         {
-            InstantiateMorningOutImages(elements, nothingToDoEveningPrefabs);
+            StartCoroutine(InstantiateMorningOutImages(elements, nothingToDoEveningPrefabs));
         }
         
     }

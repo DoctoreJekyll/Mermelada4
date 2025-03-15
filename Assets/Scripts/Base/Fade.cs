@@ -40,7 +40,5 @@ namespace Base
         {
             animator.Play("FadeOut");
         }
-        
-        
     }
 }

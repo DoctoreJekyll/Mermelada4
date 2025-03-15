@@ -3424,6 +3424,7 @@ GameObject:
   - component: {fileID: 1103874866}
   - component: {fileID: 1103874865}
   - component: {fileID: 1103874864}
+  - component: {fileID: 1103874867}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -3443,8 +3444,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ee23f88a9ae1cd641aedae0a41bf7832, type: 3}
   m_Resource: {fileID: 8300000, guid: ee23f88a9ae1cd641aedae0a41bf7832, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3541,7 +3542,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 3ae3c418a4e13b74ba85bdac72ac7c13, type: 3}
   m_Resource: {fileID: 8300000, guid: 3ae3c418a4e13b74ba85bdac72ac7c13, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3640,6 +3641,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1103874867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103874863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcd1e4453d619e48b7458224d373092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alarmAudioSource: {fileID: 1103874865}
+  fadeDuration: 3
 --- !u!1 &1331341171
 GameObject:
   m_ObjectHideFlags: 0

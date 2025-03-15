@@ -1,78 +1,62 @@
-
-
+using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Base
 {
     public class MusicManager : MonoBehaviour
     {
-        public static MusicManager Instance;  // Instancia única del MusicManager
-
-        [Header("Audio Sources")]
-        public AudioSource musicAudioSource;
-        public AudioSource alarmAudioSource;
-
-        [Header("Audio Settings")]
-        public float alarmDuration = 1.0f;
-        public float musicFadeOutSpeed = 2.0f;
-        public float musicFadeInSpeed = 2.0f;
-
-        private bool isAlarmPlaying = false;
+        private static MusicManager _instance;
 
         private void Awake()
         {
-            // Verificar si ya existe una instancia
-            if (Instance == null)
+            if (_instance == null)
             {
-                Instance = this;  // Asignar la instancia
-                DontDestroyOnLoad(gameObject);  // No destruir este objeto entre escenas
+                _instance = this;
+                DontDestroyOnLoad(this);
             }
             else
             {
-                Destroy(gameObject);  // Destruir el objeto duplicado
+                Destroy(this);
             }
         }
-
+        
+        [SerializeField] private AudioSource alarmAudioSource; // Referencia al AudioSource de la alarma
+        [SerializeField] private float fadeDuration = 3f; // Duración del fade en segundos
+        
         private void Start()
         {
-            musicAudioSource.Play();
+            // Llamamos a la función para iniciar el fade cuando la escena comienza
+            StartCoroutine(FadeOutAlarm());
         }
 
-        public void PlayAlarmAndPauseMusic()
+        private IEnumerator FadeOutAlarm()
         {
-            if (isAlarmPlaying) return;
-
-            StartCoroutine(FadeOutMusic());
+            // Empezamos a reproducir la alarma
+            alarmAudioSource.volume = 0.2f;
             alarmAudioSource.Play();
-            Invoke("EndAlarm", alarmDuration);
-        }
 
-        private void EndAlarm()
-        {
+            // Empezamos a atenuar la alarma después de 3 segundos
+            yield return new WaitForSeconds(2.25f); 
+
+            float startVolume = alarmAudioSource.volume; // Guardamos el volumen inicial de la alarma
+
+            // Hacemos el fade de la alarma
+            float timeElapsed = 0f;
+            while (timeElapsed < fadeDuration)
+            {
+                // Calculamos el volumen en función del tiempo
+                alarmAudioSource.volume = Mathf.Lerp(startVolume, 0f, timeElapsed / fadeDuration);
+
+                timeElapsed += Time.deltaTime;
+                yield return null;
+            }
+
+            // Aseguramos que el volumen quede en 0
+            alarmAudioSource.volume = 0f;
+
+            // Detenemos la alarma
             alarmAudioSource.Stop();
-            StartCoroutine(FadeInMusic());
-        }
-
-        private System.Collections.IEnumerator FadeOutMusic()
-        {
-            float startVolume = musicAudioSource.volume;
-            while (musicAudioSource.volume > 0)
-            {
-                musicAudioSource.volume -= startVolume * Time.deltaTime / musicFadeOutSpeed;
-                yield return null;
-            }
-            musicAudioSource.volume = 0;
-        }
-
-        private System.Collections.IEnumerator FadeInMusic()
-        {
-            float targetVolume = 1.0f;
-            while (musicAudioSource.volume < targetVolume)
-            {
-                musicAudioSource.volume += Time.deltaTime / musicFadeInSpeed;
-                yield return null;
-            }
-            musicAudioSource.volume = targetVolume;
         }
     }
 }

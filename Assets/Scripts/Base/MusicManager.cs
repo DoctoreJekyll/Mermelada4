@@ -23,17 +23,25 @@ namespace Base
         
         [SerializeField] private AudioSource alarmAudioSource; // Referencia al AudioSource de la alarma
         [SerializeField] private float fadeDuration = 3f; // Duración del fade en segundos
-        
-        private void Start()
+
+        private void OnEnable()
         {
-            // Llamamos a la función para iniciar el fade cuando la escena comienza
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        private void OnDisable()
+        {
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
+        private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+        {
             StartCoroutine(FadeOutAlarm());
         }
 
         private IEnumerator FadeOutAlarm()
         {
-            // Empezamos a reproducir la alarma
-            alarmAudioSource.volume = 0.2f;
+            alarmAudioSource.volume = 0.25f;
             alarmAudioSource.Play();
 
             // Empezamos a atenuar la alarma después de 3 segundos

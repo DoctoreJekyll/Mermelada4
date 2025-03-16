@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -29,7 +30,14 @@ namespace Base
         private int currentIndex = 0;
         private int targetIndex = 0;
         private Coroutine snapCoroutine;
-        
+
+        private PlayAnimationPj playAnimationPj;
+
+        private void Awake()
+        {
+            playAnimationPj = FindFirstObjectByType<PlayAnimationPj>();
+        }
+
         void Start()
         {
             InitializeComponents();
@@ -58,6 +66,7 @@ namespace Base
         public void OnBeginDrag(PointerEventData eventData)
         {
             CancelCurrentSnap();
+            playAnimationPj.PlayAnimation();
             startDragPosition = content.anchoredPosition;
         }
         

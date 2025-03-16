@@ -22,6 +22,7 @@ namespace Base
         }
         
         [SerializeField] private AudioSource alarmAudioSource; // Referencia al AudioSource de la alarma
+        [SerializeField] private AudioSource bubbleAudioSource;
         [SerializeField] private float fadeDuration = 3f; // Duración del fade en segundos
 
         private void OnEnable()
@@ -65,6 +66,11 @@ namespace Base
 
             // Detenemos la alarma
             alarmAudioSource.Stop();
+        }
+
+        public void BubblePlay()
+        {
+            bubbleAudioSource.PlayOneShot(bubbleAudioSource.clip);
         }
     }
 }

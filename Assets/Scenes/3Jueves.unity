@@ -451,18 +451,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &148678567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,7 +505,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &148678570
 AudioSource:
   m_ObjectHideFlags: 0
@@ -968,18 +955,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 297402659}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &297402657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,7 +1009,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &297402660
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1863,18 +1837,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 556600838}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &556600836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1929,7 +1891,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &556600839
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2204,18 +2165,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 609100684}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &609100682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2270,7 +2219,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &609100685
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2561,18 +2509,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 759245912}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &759245910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2627,7 +2563,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &759245913
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4689,18 +4624,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1571127842}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1571127840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4755,7 +4678,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &1571127843
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5956,18 +5878,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2042766868}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2042766866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6022,7 +5932,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &2042766869
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6463,18 +6372,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2114938969}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2114938967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6529,7 +6426,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &2114938970
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6736,18 +6632,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2130924414}
-        m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
-        m_MethodName: PlayBubbleSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2130924412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6802,7 +6686,6 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
-  bubbleSound: {fileID: 0}
 --- !u!82 &2130924415
 AudioSource:
   m_ObjectHideFlags: 0

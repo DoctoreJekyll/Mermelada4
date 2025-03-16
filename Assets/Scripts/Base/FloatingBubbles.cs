@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Base
 {
@@ -9,15 +10,19 @@ namespace Base
         [SerializeField] private float floatSpeed = 1.0f;    // Velocidad del movimiento
         [SerializeField] private float lateralMovementRange = 18f; // Rango de movimiento lateral (X)
         [SerializeField] private float lateralSpeed = 3.5f; // Velocidad lateral
-        
-        
-        [SerializeField] private AudioSource bubbleSound;
+
+        private Button button;
         private Vector3 startPos;
 
         private void Start()
         {
-            bubbleSound = GetComponent<AudioSource>();
+            button = GetComponent<Button>();
             startPos = transform.position; // Guardamos la posición inicial de la burbuja
+            
+            if (button != null)
+            {
+                button.onClick.AddListener(PlayBubbleSound);
+            }
         }
 
         private void Update()
@@ -32,9 +37,18 @@ namespace Base
             transform.position = new Vector3(startPos.x + newX, startPos.y + newY, startPos.z);
         }
 
-        public void PlayBubbleSound()
+        private void PlayBubbleSound()
         {
-            bubbleSound.PlayOneShot(bubbleSound.clip);
+            MusicManager musicManager = FindFirstObjectByType<MusicManager>();
+            musicManager.BubblePlay();
+        }
+        
+        private void OnDestroy()
+        {
+            if (button != null)
+            {
+                button.onClick.RemoveListener(PlayBubbleSound); // Limpiar la suscripción para evitar errores
+            }
         }
     }
 }

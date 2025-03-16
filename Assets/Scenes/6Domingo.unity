@@ -767,14 +767,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Otro dia se fue
+  - Pues otra semana se fue...
   - "Ma\xF1ana es lunes, ma\xF1ana nueva semana"
-  - Esto termina aqui, este no va a ser el ultimo dia que se me vaya
+  - "Esto termina aqui. Probablemente no sea el \xFAltimo d\xEDa que se me vaya"
   - No sera el ultimo dia donde no haga nada
   - Me merezco no hacer nada pero
-  - No puedo joderme asi el cerebro
-  - O creo que no puedo, o no, deberia.
-  - Tengo que desisnstalar esta aplicacion
+  - No puedo joderme asi el cerebro ni perder semanas enteras
+  - O creo que no puedo, o no deberia
+  - Tengo que desisnstalar esta aplicacion y guardar mas el movil
   - Igual no soluciona nada pero es un paso
   - Buenas noches para mi.
   timeBetweenLines: 0.05
@@ -6126,12 +6126,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - DOMINGO
-  - Mira, hoy no pienso hacer nada
-  - Nada
-  - No deberia ni coger el movil
-  - Deberia de pensar en que quiero hacer
+  - Mira, hoy no pienso hacer nada.
+  - Nada...
+  - No deberia ni de coger el movil, ni responder a nadie
+  - Deberia de pensar en que quiero hacer, o al menos en como empezar a hacer algo
   - No puedo seguir una y otra y otra semana asi
-  - "Peque\xF1os pasos, pero tienes que hacer algo"
+  - "Peque\xF1os pasos va, pero tienes que hacer algo"
   - O no.
   timeBetweenLines: 0.05
   boxTxt: {fileID: 1037566637}

@@ -29,10 +29,10 @@ namespace Dialogue
             "¿Sabías esto?  #datoscuriosos #sorprendente #viral",
             "Así se ve el nuevo parche en acción  #gaming #update #novedades",
             "No esperaba este final...  #terror #historias #wtf",
-            "El combo definitivo ⚡️ #combos #fyp #gaming",
+            "El combo definitivo  #combos #fyp #gaming",
             "¿Quién más recuerda este clásico?  #retro #nostalgia #oldschool",
             "Parte 2 | ¿Qué harías en esta situación?  #decisiones #historia",
-            "El bug más roto que he visto 😵‍ #gaming #glitch #diversión",
+            "El bug más roto que he visto  #gaming #glitch #diversión",
             "Este truco cambió mi juego  #lifehack #protips #gameplay",
             "Este momento me dejó sin palabras...  #sorpresa #gamingclips #wow"
         };

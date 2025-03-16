@@ -11,7 +11,7 @@ namespace Base
         [SerializeField] private float lateralSpeed = 3.5f; // Velocidad lateral
         
         
-        private AudioSource bubbleSound;
+        [SerializeField] private AudioSource bubbleSound;
         private Vector3 startPos;
 
         private void Start()

@@ -214,10 +214,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1331341172}
+  - {fileID: 894052533}
   - {fileID: 229432567}
   - {fileID: 297296633}
   - {fileID: 899096144}
-  - {fileID: 894052533}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -518,6 +518,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &148678570
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1044,7 +1045,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
+      - m_Target: {fileID: 297402659}
         m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
         m_MethodName: PlayBubbleSound
         m_Mode: 1
@@ -1110,6 +1111,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &297402660
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2085,7 +2087,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
+      - m_Target: {fileID: 556600838}
         m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
         m_MethodName: PlayBubbleSound
         m_Mode: 1
@@ -2151,6 +2153,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &556600839
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2425,7 +2428,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
+      - m_Target: {fileID: 609100684}
         m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
         m_MethodName: PlayBubbleSound
         m_Mode: 1
@@ -2491,6 +2494,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &609100685
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2917,7 +2921,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
+      - m_Target: {fileID: 759245912}
         m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
         m_MethodName: PlayBubbleSound
         m_Mode: 1
@@ -2983,6 +2987,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &759245913
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3289,7 +3294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &899096144
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5069,7 +5074,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
+      - m_Target: {fileID: 1571127842}
         m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
         m_MethodName: PlayBubbleSound
         m_Mode: 1
@@ -5135,6 +5140,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &1571127843
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6340,7 +6346,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
+      - m_Target: {fileID: 2042766868}
         m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
         m_MethodName: PlayBubbleSound
         m_Mode: 1
@@ -6406,6 +6412,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &2042766869
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6521,7 +6528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2062776653
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6847,7 +6854,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
+      - m_Target: {fileID: 2114938969}
         m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
         m_MethodName: PlayBubbleSound
         m_Mode: 1
@@ -6913,6 +6920,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &2114938970
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7119,7 +7127,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 148678569}
+      - m_Target: {fileID: 2130924414}
         m_TargetAssemblyTypeName: Base.FloatingBubbles, Assembly-CSharp
         m_MethodName: PlayBubbleSound
         m_Mode: 1
@@ -7185,6 +7193,7 @@ MonoBehaviour:
   floatSpeed: 1
   lateralMovementRange: 18
   lateralSpeed: 3.5
+  bubbleSound: {fileID: 0}
 --- !u!82 &2130924415
 AudioSource:
   m_ObjectHideFlags: 0

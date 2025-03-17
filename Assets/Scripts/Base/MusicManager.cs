@@ -13,11 +13,11 @@ namespace Base
             if (_instance == null)
             {
                 _instance = this;
-                DontDestroyOnLoad(this);
+                DontDestroyOnLoad(gameObject);
             }
             else
             {
-                Destroy(this);
+                Destroy(gameObject);
             }
         }
         

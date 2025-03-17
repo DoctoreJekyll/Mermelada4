@@ -654,11 +654,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
+  - ...
+  - Todo el dia en la cama eh
   - Pues, otra semana perdida
   - No dire que la semana que viene sera mejor
   - Ya nos conocemos, todas las semanas lo mismo
-  - Tienes que hacer algo, no se que ahora mismo pero
+  - Tienes que hacer algo, no se que es ahora mismo pero
   - Tienes que hacer algo.
+  - Nanit
   timeBetweenLines: 0.05
   boxTxt: {fileID: 1448983607}
 --- !u!114 &219700533
@@ -1164,7 +1167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir a pasear
+  m_text: Quedarse en la cama
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
   m_sharedMaterial: {fileID: 523736866782473456, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
@@ -1300,7 +1303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir a pasear
+  m_text: Quedarse en la cama
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
   m_sharedMaterial: {fileID: 523736866782473456, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
@@ -3790,7 +3793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Trabajar en casa
+  m_text: Quedarse en la cama
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
   m_sharedMaterial: {fileID: 523736866782473456, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
@@ -4063,7 +4066,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir a pasear
+  m_text: Quedarse en la cama
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
   m_sharedMaterial: {fileID: 523736866782473456, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
@@ -5237,7 +5240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Trabajar en casa
+  m_text: Quedarse en la cama
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
   m_sharedMaterial: {fileID: 523736866782473456, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
@@ -5509,7 +5512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Trabajar en casa
+  m_text: Quedarse en la cama
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5ace5101e3ad327419601527a377eff3, type: 2}
   m_sharedMaterial: {fileID: 523736866782473456, guid: 5ace5101e3ad327419601527a377eff3, type: 2}

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3576750114843448871}
   - component: {fileID: 7417332079154341809}
-  - component: {fileID: 561621772569772854}
   m_Layer: 0
   m_Name: VideoPlayer
   m_TagString: Untagged
@@ -51,7 +50,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 1
+  m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 3
   m_AudioOutputMode: 2
@@ -69,16 +68,3 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
---- !u!114 &561621772569772854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6948319391931168745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb9eed87d5f2db243a7f20d03fb4796b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  url: https://media.istockphoto.com/id/1432336761/video/abstract-background-of-the-new-year-festival-celebration-slow-moving-particles-and-confetti.mp4?s=mp4-640x640-is&k=20&c=AfAFXsqwvVgTbfNg_meJfla19hPAUVkFKr9IFwEq3yY=

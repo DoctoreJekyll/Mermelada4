@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Coraz\xF3n_0": -6370324217970633093
+      "Coraz\xF3n_1": -6616814336568674189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Comente_0: 412648327736537557
+      Comente_1: 6575113475806082325
+      Comente_2: 4097128795464765564
+      Comente_3: -7832549277440639823
+      Comente_4: 8701397065380516197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
